@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Declaration des styles de bases */
+.grid_container>div{
+    border: 3px white solid;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto) ;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Définition des font */
+li > a {
+    color: gray;
+    font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+    color: black;
+    font-family: 'Outfit', sans-serif;
+}
+
+h2 {
+    color: black;
+    font-family: 'Outfit', sans-serif;
+}
+
+p {
+    color: grey;
+    font-family: 'Outfit', sans-serif ;
+    font-size: medium;
+}
+
+.author {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Definition de la barre de navigation */
+.svg {
+    display: block;
+    position: relative;
+    top: 30px;
+}
+
+nav > ul {
+    border: 2px white solid;
+    display: inline;
+    position: relative;
+    left: 63%;
+    top: -10px;
+    list-style: none;
+    
+}
+
+nav > ul > li {
+    display: inline;
+    padding: 1%;
+}
+
+button {
+    background-color: rgb(252, 164, 48);
+    border-radius: 8%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: bold;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Definition de la bannière article principal */
+.main_img {
+    float: left;
+    width: auto;
+    height: 260px;
+}
+
+.bloc {
+    padding-bottom: 20%;
+}
+
+.bloc3 {
+    display: block;
+    width: 550px;
+    height: 260px;
+    padding-left: 4%;
+    padding-top: 1%;
+    float: right;
+}
+
+.bloc3 > .avatar {
+    display: inline;
+    width: 80px;
+    height: auto;
+    padding-top: 5%;
+
+}
+
+.txt_user {
+    display: inline;
+    position: relative;
+    left: 18%;
+    top: -25%;
+
+}
+
+/* Définition des blocs article secondaire */
+.bloc4{
+    display: inline;
+    width: auto;
+    height: 300px;
+}
+
+.img_art1 {
+    border: 2px white solid;
+    width: auto;
+    height: 64%;
+    padding-bottom: 5%;
+}
+
+.bloc5{
+    display: inline;
+    width: auto;
+    height: 300px;
+}
+
+.img_art2 {
+    border: 2px white solid;
+    width: auto;
+    height: 64% ;
+    padding-bottom: 5%;
+}
+
+.bloc6 {
+    display: inline;
+    width: auto;
+    height: 300px;
+}
+
+.img_art3 {
+    border: 2px white solid;
+    width: auto;
+    height: 64%;
+    padding-bottom: 5%;
+}
+
+h2 {
+    padding-bottom: 2%;
+}
+
+
+.avatar1 {
+    border: 2px white solid;
+    width: auto;
+    height: 70px;
+    position: relative;
+    top: 10%;
+}
+
+.txt_user1 {
+    position: relative;
+    left: 25%;
+    top: -40%;
+}
+
+.avatar2 {
+    border: 2px white solid;
+    width: auto;
+    height: 70px;
+    position: relative;
+    top: 10%;
+}
+
+.txt_user2 {
+    position: relative;
+    left: 25%;
+    top: -40%;
+}
+
+.avatar3 {
+    border: 2px white solid;
+    width: auto;
+    height: 70px;
+    position: relative;
+    top: 10%;
+}
+
+.txt_user3 {
+    position: relative;
+    left: 25%;
+    top: -40%;
+}
+
+/* Definition du bloc footer */
+.footer_txt {
+    float: right;
+
+}
+
+
+
+
+
+
+
+/* Layout Desktop */
+/* @media screen and (min-width: 1440px) { */
+    .bloc1 {
+        grid-column: 1 / 13;
+        grid-row: 1;
+    }
+    
+    .bloc {
+        grid-column: 1 / 6;
+        grid-row: 2 / 4;
+    }
+
+    .bloc3 {
+        grid-column: 6 / 13;
+        grid-row: 2 / 4;
+
+    }
+    
+    .bloc4 {
+        grid-column: 1 / 5;
+        grid-row: 4 / 7 ;
+    }
+
+    .bloc5 {
+        grid-column: 5 / 9;
+        grid-row: 4 / 7 ;
+    }
+
+    .bloc6 {
+        grid-column: 9 / 13;
+        grid-row: 4 / 7 ;
+    }
+
+    .bloc7 {
+        grid-column: 1 / 5;
+        grid-row: 7 / 8;
+    }
+
+    .bloc8 {
+        grid-column: 5 / 9;
+        grid-row: 7 / 8;
+    }
+
+    .bloc9 {
+        grid-column: 9 / 13;
+        grid-row: 7 / 8;
+    }
+    
+    .bloc10 {
+        grid-column: 1 / 13;
+        grid-row: 8 ;
+    }
